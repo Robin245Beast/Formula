@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F1 2025 — All Teams</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <span class="f1-icon">F1</span>
+    FORMULA ONE
+  </div>
+  <div class="nav-right">
+    <a href="#">Teams</a>
+    <a href="#">Drivers</a>
+    <a href="#">Races</a>
+    <span class="season-badge">2025 Season</span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-img"></div>
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Formula One World Championship</div>
+    <h1 class="hero-title">10 TEAMS.<br><span>ONE</span> DREAM.</h1>
+    <p class="hero-sub">Every constructor, every machine, every driver. Meet the teams that define the pinnacle of motorsport.</p>
+    <div class="hero-stats">
+      <div class="h-stat"><div class="h-stat-n">10</div><div class="h-stat-l">Constructor Teams</div></div>
+      <div class="h-stat"><div class="h-stat-n">20</div><div class="h-stat-l">Drivers</div></div>
+      <div class="h-stat"><div class="h-stat-n">24</div><div class="h-stat-l">Races in 2025</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span class="mq-item">Red Bull Racing <span class="sep">✦</span></span>
+    <span class="mq-item">Scuderia Ferrari <span class="sep">✦</span></span>
+    <span class="mq-item">McLaren F1 Team <span class="sep">✦</span></span>
+    <span class="mq-item">Mercedes-AMG Petronas <span class="sep">✦</span></span>
+    <span class="mq-item">Aston Martin Aramco <span class="sep">✦</span></span>
+    <span class="mq-item">BWT Alpine F1 Team <span class="sep">✦</span></span>
+    <span class="mq-item">Williams Racing <span class="sep">✦</span></span>
+    <span class="mq-item">Haas F1 Team <span class="sep">✦</span></span>
+    <span class="mq-item">Visa Cash App RB <span class="sep">✦</span></span>
+    <span class="mq-item">Stake F1 Kick Sauber <span class="sep">✦</span></span>
+    <!-- duplicate -->
+    <span class="mq-item">Red Bull Racing <span class="sep">✦</span></span>
+    <span class="mq-item">Scuderia Ferrari <span class="sep">✦</span></span>
+    <span class="mq-item">McLaren F1 Team <span class="sep">✦</span></span>
+    <span class="mq-item">Mercedes-AMG Petronas <span class="sep">✦</span></span>
+    <span class="mq-item">Aston Martin Aramco <span class="sep">✦</span></span>
+    <span class="mq-item">BWT Alpine F1 Team <span class="sep">✦</span></span>
+    <span class="mq-item">Williams Racing <span class="sep">✦</span></span>
+    <span class="mq-item">Haas F1 Team <span class="sep">✦</span></span>
+    <span class="mq-item">Visa Cash App RB <span class="sep">✦</span></span>
+    <span class="mq-item">Stake F1 Kick Sauber <span class="sep">✦</span></span>
+  </div>
+</div>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <button class="filter-btn active" onclick="filterTeams('all', this)">All Teams</button>
+  <button class="filter-btn" onclick="filterTeams('top', this)">Top 4</button>
+  <button class="filter-btn" onclick="filterTeams('midfield', this)">Midfield</button>
+  <button class="filter-btn" onclick="filterTeams('backmarker', this)">Backmarkers</button>
+</div>
+
+<!-- TEAMS -->
+<div class="sec-header">
+  <div>
+    <div class="sec-label">// 2025 Constructor Grid</div>
+    <h2 class="sec-title">THE TEAMS</h2>
+  </div>
+  <div class="team-count">10</div>
+</div>
+
+<div class="teams-grid" id="teamsGrid">
+
+  <!-- RED BULL -->
+  <div class="team-card reveal" data-group="top" style="--team-color:#3671C6; --team-glow:#3671C6;" id="redbull">
+    <div class="team-pos">1</div>
+    <div class="card-inner">
+      <div class="card-info">
+        <div class="card-top">
+          <div class="team-name">Red Bull Racing</div>
+          <div class="team-country">🇦🇹 Austria · Founded 2005</div>
+          <div class="team-car-name">RB21</div>
+          <div class="team-drivers">
+            <div class="driver-name"><span class="driver-num">1</span> Max Verstappen</div>
+            <div class="driver-name"><span class="driver-num">22</span> Yuki Tsunoda</div>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <div class="mini-stat"><div class="mini-stat-n">6</div><div class="mini-stat-l">Constructor Titles</div></div>
+          <div class="mini-stat"><div class="mini-stat-n">4</div><div class="mini-stat-l">Driver Titles</div></div>
+          <span class="engine-badge">Honda RBPT</span>
+        </div>
+      </div>
+      <div class="card-visual">
+        <div class="card-visual-bg"></div>
+        <img id="glow" class="car-img"
+          src="Images/car1.jpg"
+          alt="Red Bull RB21"
+          onerror="this.src='https://placehold.co/600x300/111/3671C6?text=Red+Bull+RB21&font=bebas-neue'">
+      </div>
+    </div>
+  </div>
+
+  <!-- FERRARI -->
+  <div class="team-card reveal" data-group="top" style="--team-color:#E8002D; --team-glow:#E8002D;">
+    <div class="team-pos">2</div>
+    <div class="card-inner">
+      <div class="card-info">
+        <div class="card-top">
+          <div class="team-name">Scuderia Ferrari HP</div>
+          <div class="team-country">🇮🇹 Italy · Founded 1950</div>
+          <div class="team-car-name">SF-25</div>
+          <div class="team-drivers">
+            <div class="driver-name"><span class="driver-num">44</span> Lewis Hamilton</div>
+            <div class="driver-name"><span class="driver-num">16</span> Charles Leclerc</div>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <div class="mini-stat"><div class="mini-stat-n">16</div><div class="mini-stat-l">Constructor Titles</div></div>
+          <div class="mini-stat"><div class="mini-stat-n">15</div><div class="mini-stat-l">Driver Titles</div></div>
+          <span class="engine-badge">Ferrari</span>
+        </div>
+      </div>
+      <div class="card-visual">
+        <div class="card-visual-bg"></div>
+        <img class="car-img"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Charles_Leclerc_2024_Bahrain_GP_%2853568831849%29_%28cropped%29.jpg/1280px-Charles_Leclerc_2024_Bahrain_GP_%2853568831849%29_%28cropped%29.jpg"
+          alt="Ferrari SF-25"
+          onerror="this.src='https://placehold.co/600x300/111/E8002D?text=Ferrari+SF-25&font=bebas-neue'">
+      </div>
+    </div>
+  </div>
+
+  <!-- McLAREN -->
+  <div class="team-card reveal" data-group="top" style="--team-color:#FF8000; --team-glow:#FF8000;">
+    <div class="team-pos">3</div>
+    <div class="card-inner">
+      <div class="card-info">
+        <div class="card-top">
+          <div class="team-name">McLaren F1 Team</div>
+          <div class="team-country">🇬🇧 United Kingdom · Founded 1963</div>
+          <div class="team-car-name">MCL39</div>
+          <div class="team-drivers">
+            <div class="driver-name"><span class="driver-num">4</span> Lando Norris</div>
+            <div class="driver-name"><span class="driver-num">81</span> Oscar Piastri</div>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <div class="mini-stat"><div class="mini-stat-n">8</div><div class="mini-stat-l">Constructor Titles</div></div>
+          <div class="mini-stat"><div class="mini-stat-n">12</div><div class="mini-stat-l">Driver Titles</div></div>
+          <span class="engine-badge">Mercedes</span>
+        </div>
+      </div>
+      <div class="card-visual">
+        <div class="card-visual-bg"></div>
+        <img class="car-img"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Lando_Norris_2024_Bahrain_GP_%2853569964930%29_%28cropped%29.jpg/1280px-Lando_Norris_2024_Bahrain_GP_%2853569964930%29_%28cropped%29.jpg"
+          alt="McLaren MCL39"
+          onerror="this.src='https://placehold.co/600x300/111/FF8000?text=McLaren+MCL39&font=bebas-neue'">
+      </div>
+    </div>
+  </div>
+
+  <!-- MERCEDES -->
+  <div class="team-card reveal" data-group="top" style="--team-color:#27F4D2; --team-glow:#27F4D2;">
+    <div class="team-pos">4</div>
+    <div class="card-inner">
+      <div class="card-info">
+        <div class="card-top">
+          <div class="team-name">Mercedes-AMG Petronas</div>
+          <div class="team-country">🇩🇪 Germany · Founded 1954</div>
+          <div class="team-car-name">W16</div>
+          <div class="team-drivers">
+            <div class="driver-name"><span class="driver-num">63</span> George Russell</div>
+            <div class="driver-name"><span class="driver-num">12</span> Andrea Kimi Antonelli</div>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <div class="mini-stat"><div class="mini-stat-n">8</div><div class="mini-stat-l">Constructor Titles</div></div>
+          <div class="mini-stat"><div class="mini-stat-n">7</div><div class="mini-stat-l">Driver Titles</div></div>
+          <span class="engine-badge">Mercedes</span>
+        </div>
+      </div>
+      <div class="card-visual">
+        <div class="card-visual-bg"></div>
+        <img class="car-img"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/George_Russell_2024_Bahrain_GP_%2853568832424%29_%28cropped%29.jpg/1280px-George_Russell_2024_Bahrain_GP_%2853568832424%29_%28cropped%29.jpg"
+          alt="Mercedes W16"
+          onerror="this.src='https://placehold.co/600x300/111/27F4D2?text=Mercedes+W16&font=bebas-neue'">
+      </div>
+    </div>
+  </div>
+
+  <!-- ASTON MARTIN -->
+  <div class="team-card reveal" data-group="midfield" style="--team-color:#229971; --team-glow:#229971;">
+    <div class="team-pos">5</div>
+    <div class="card-inner">
+      <div class="card-info">
+        <div class="card-top">
+          <div class="team-name">Aston Martin Aramco</div>
+          <div class="team-country">🇬🇧 United Kingdom · Founded 2018</div>
+          <div class="team-car-name">AMR25</div>
+          <div class="team-drivers">
+            <div class="driver-name"><span class="driver-num">14</span> Fernando Alonso</div>
+            <div class="driver-name"><span class="driver-num">18</span> Lance Stroll</div>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <div class="mini-stat"><div class="mini-stat-n">0</div><div class="mini-stat-l">Constructor Titles</div></div>
+          <div class="mini-stat"><div class="mini-stat-n">280+</div><div class="mini-stat-l">Points 2023</div></div>
+          <span class="engine-badge">Mercedes</span>
+        </div>
+      </div>
+      <div class="card-visual">
+        <div class="card-visual-bg"></div>
+        <img class="car-img"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Fernando_Alonso_2024_Bahrain_GP_%2853568826304%29_%28cropped%29.jpg/1280px-Fernando_Alonso_2024_Bahrain_GP_%2853568826304%29_%28cropped%29.jpg"
+          alt="Aston Martin AMR25"
+          onerror="this.src='https://placehold.co/600x300/111/229971?text=Aston+Martin+AMR25&font=bebas-neue'">
+      </div>
+    </div>
+  </div>
+
+  <!-- ALPINE -->
+  <div class="team-card reveal" data-group="midfield" style="--team-color:#0093CC; --team-glow:#0093CC;">
+    <div class="team-pos">6</div>
+    <div class="card-inner">
+      <div class="card-info">
+        <div class="card-top">
+          <div class="team-name">BWT Alpine F1 Team</div>
+          <div class="team-country">🇫🇷 France · Founded 1977</div>
+          <div class="team-car-name">A525</div>
+          <div class="team-drivers">
+            <div class="driver-name"><span class="driver-num">10</span> Pierre Gasly</div>
+            <div class="driver-name"><span class="driver-num">7</span> Jack Doohan</div>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <div class="mini-stat"><div class="mini-stat-n">2</div><div class="mini-stat-l">Constructor Titles</div></div>
+          <div class="mini-stat"><div class="mini-stat-n">4</div><div class="mini-stat-l">Driver Titles</div></div>
+          <span class="engine-badge">Renault</span>
+        </div>
+      </div>
+      <div class="card-visual">
+        <div class="card-visual-bg"></div>
+        <img class="car-img"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Pierre_Gasly_2024_Bahrain_GP_%2853569970660%29_%28cropped%29.jpg/1280px-Pierre_Gasly_2024_Bahrain_GP_%2853569970660%29_%28cropped%29.jpg"
+          alt="Alpine A525"
+          onerror="this.src='https://placehold.co/600x300/111/0093CC?text=Alpine+A525&font=bebas-neue'">
+      </div>
+    </div>
+  </div>
+
+  <!-- WILLIAMS -->
+  <div class="team-card reveal" data-group="midfield" style="--team-color:#64C4FF; --team-glow:#64C4FF;">
+    <div class="team-pos">7</div>
+    <div class="card-inner">
+      <div class="card-info">
+        <div class="card-top">
+          <div class="team-name">Williams Racing</div>
+          <div class="team-country">🇬🇧 United Kingdom · Founded 1977</div>
+          <div class="team-car-name">FW47</div>
+          <div class="team-drivers">
+            <div class="driver-name"><span class="driver-num">23</span> Alexander Albon</div>
+            <div class="driver-name"><span class="driver-num">55</span> Carlos Sainz</div>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <div class="mini-stat"><div class="mini-stat-n">9</div><div class="mini-stat-l">Constructor Titles</div></div>
+          <div class="mini-stat"><div class="mini-stat-n">7</div><div class="mini-stat-l">Driver Titles</div></div>
+          <span class="engine-badge">Mercedes</span>
+        </div>
+      </div>
+      <div class="card-visual">
+        <div class="card-visual-bg"></div>
+        <img class="car-img"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Alexander_Albon_2024_Bahrain_GP_%2853568828844%29_%28cropped%29.jpg/1280px-Alexander_Albon_2024_Bahrain_GP_%2853568828844%29_%28cropped%29.jpg"
+          alt="Williams FW47"
+          onerror="this.src='https://placehold.co/600x300/111/64C4FF?text=Williams+FW47&font=bebas-neue'">
+      </div>
+    </div>
+  </div>
+
+  <!-- RACING BULLS (VCARB) -->
+  <div class="team-card reveal" data-group="midfield" style="--team-color:#6692FF; --team-glow:#6692FF;">
+    <div class="team-pos">8</div>
+    <div class="card-inner">
+      <div class="card-info">
+        <div class="card-top">
+          <div class="team-name">Visa Cash App RB</div>
+          <div class="team-country">🇮🇹 Italy · Founded 2006</div>
+          <div class="team-car-name">VCARB 02</div>
+          <div class="team-drivers">
+            <div class="driver-name"><span class="driver-num">22</span> Yuki Tsunoda</div>
+            <div class="driver-name"><span class="driver-num">6</span> Isack Hadjar</div>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <div class="mini-stat"><div class="mini-stat-n">0</div><div class="mini-stat-l">Constructor Titles</div></div>
+          <div class="mini-stat"><div class="mini-stat-n">34</div><div class="mini-stat-l">Points 2024</div></div>
+          <span class="engine-badge">Honda RBPT</span>
+        </div>
+      </div>
+      <div class="card-visual">
+        <div class="card-visual-bg"></div>
+        <img class="car-img"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Yuki_Tsunoda_2024_Bahrain_GP_%2853569969670%29_%28cropped%29.jpg/1280px-Yuki_Tsunoda_2024_Bahrain_GP_%2853569969670%29_%28cropped%29.jpg"
+          alt="Racing Bulls VCARB02"
+          onerror="this.src='https://placehold.co/600x300/111/6692FF?text=Racing+Bulls+VCARB02&font=bebas-neue'">
+      </div>
+    </div>
+  </div>
+
+  <!-- HAAS -->
+  <div class="team-card reveal" data-group="backmarker" style="--team-color:#B6BABD; --team-glow:#B6BABD;">
+    <div class="team-pos">9</div>
+    <div class="card-inner">
+      <div class="card-info">
+        <div class="card-top">
+          <div class="team-name">MoneyGram Haas F1</div>
+          <div class="team-country">🇺🇸 United States · Founded 2016</div>
+          <div class="team-car-name">VF-25</div>
+          <div class="team-drivers">
+            <div class="driver-name"><span class="driver-num">87</span> Esteban Ocon</div>
+            <div class="driver-name"><span class="driver-num">31</span> Oliver Bearman</div>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <div class="mini-stat"><div class="mini-stat-n">0</div><div class="mini-stat-l">Constructor Titles</div></div>
+          <div class="mini-stat"><div class="mini-stat-n">31</div><div class="mini-stat-l">Points 2024</div></div>
+          <span class="engine-badge">Ferrari</span>
+        </div>
+      </div>
+      <div class="card-visual">
+        <div class="card-visual-bg"></div>
+        <img class="car-img"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Nico_H%C3%BClkenberg_2024_Bahrain_GP_%2853569970415%29_%28cropped%29.jpg/1280px-Nico_H%C3%BClkenberg_2024_Bahrain_GP_%2853569970415%29_%28cropped%29.jpg"
+          alt="Haas VF-25"
+          onerror="this.src='https://placehold.co/600x300/111/B6BABD?text=Haas+VF-25&font=bebas-neue'">
+      </div>
+    </div>
+  </div>
+
+  <!-- SAUBER / KICK -->
+  <div class="team-card reveal" data-group="backmarker" style="--team-color:#52E252; --team-glow:#52E252;">
+    <div class="team-pos">10</div>
+    <div class="card-inner">
+      <div class="card-info">
+        <div class="card-top">
+          <div class="team-name">Stake F1 Kick Sauber</div>
+          <div class="team-country">🇨🇭 Switzerland · Founded 1993</div>
+          <div class="team-car-name">C45</div>
+          <div class="team-drivers">
+            <div class="driver-name"><span class="driver-num">27</span> Nico Hülkenberg</div>
+            <div class="driver-name"><span class="driver-num">5</span> Gabriel Bortoleto</div>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <div class="mini-stat"><div class="mini-stat-n">0</div><div class="mini-stat-l">Constructor Titles</div></div>
+          <div class="mini-stat"><div class="mini-stat-n">2026</div><div class="mini-stat-l">Becomes Audi</div></div>
+          <span class="engine-badge">Ferrari</span>
+        </div>
+      </div>
+      <div class="card-visual">
+        <div class="card-visual-bg"></div>
+        <img class="car-img"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Valtteri_Bottas_2024_Bahrain_GP_%2853569064386%29_%28cropped%29.jpg/1280px-Valtteri_Bottas_2024_Bahrain_GP_%2853569064386%29_%28cropped%29.jpg"
+          alt="Sauber C45"
+          onerror="this.src='https://placehold.co/600x300/111/52E252?text=Sauber+C45&font=bebas-neue'">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="f-logo">F1 <span>TEAMS</span></div>
+    <p style="margin-top:8px">Data accurate as of the 2025 Formula One World Championship season.</p>
+  </div>
+  <p>© 2025 Formula One World Championship Ltd. All team names and logos are property of their respective owners.</p>
+</footer>
+
+<script src="logic.js"></script>
+</body>
+</html>
